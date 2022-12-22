@@ -15,9 +15,9 @@ jobs:
     - name: Export and validate model
       uses: materpillar/capella-html-exporter@v6
       with:
-        entrypoint: model/entrypoint.sh
+        entrypoint: entrypoint.sh
         model-name: capella-automations
-        path-model-folder: model/capella-automations
+        path-model-folder: capella-automations
 
     - name: Archive HTML export and validation report
       uses: actions/upload-artifact@v3
